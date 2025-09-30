@@ -1,16 +1,11 @@
 # Why are the watertight doors so heavy?
 
-    
 === "Short Answer"
-  Because they must withstand substantial outside sea pressure to keep flooding from spreading—see 'What is a watertight door?' for details.
-
+    See the definition of watertight doors, above.
 === "Detailed Answer"
-    Because they must withstand substantial outside sea pressure to keep flooding from spreading—see 'What is a watertight door?' for details.
-
+    See the definition of watertight doors, above.
 === "Related Topics"
-  - [What is a “hatch”?](what-is-a-hatch.md)
-  - [What is a “head”?](what-is-a-head.md)
-  - [What is a “ladder”?](what-is-a-ladder.md)
-  - [What is a “watertight door”?](what-is-a-watertight-door.md)
-  - [What should we know before discussing what is in the boat?](what-should-we-know-before-discussing-what-is-in-the-boat.md)
-  - [Why are there so many doorways to go through?](why-are-there-so-many-doorways-to-go-through.md)
+    - [What should we know about before discussing what is in the boat?](./what-should-we-know-about-before-discussing-what-is-in-the-boat.md)
+    - [Where is the pressure hull?  Can I see it from the pier?](./where-is-the-pressure-hull-can-i-see-it-from-the-pier.md)
+    - [Why are the chiefs’ quarters known as the goat locker?](./why-are-the-chiefs-quarters-known-as-the-goat-locker.md)
+    - [Why are there so many doorways to go through?](./why-are-there-so-many-doorways-to-go-through.md)

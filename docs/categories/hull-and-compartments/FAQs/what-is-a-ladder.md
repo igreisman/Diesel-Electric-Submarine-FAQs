@@ -1,16 +1,11 @@
 # What is a “ladder”?
 
-    
 === "Short Answer"
-  Navy terminology for stairs.
-
+    A ladder, in Navy speak, is a set of stairs or steps on a ship.
 === "Detailed Answer"
-    Navy terminology for stairs. Pampanito’s original ladders are near‑vertical, unlike the stair‑like ladders added in the torpedo rooms for visitors.
-
+    A ladder, in Navy speak, is a set of stairs or steps on a ship.  Most of the original ladders on the Pampanito actually resemble the almost straight up and down ladders around your home.  However, they were not as easily moved.  Surface ships have ladders that look more like stairs.  Those are similar to what was added in the torpedo rooms for visitors and old docents to enter and exit the Pampanito museum.
 === "Related Topics"
-  - [What is a “hatch”?](what-is-a-hatch.md)
-  - [What is a “head”?](what-is-a-head.md)
-  - [What is a “watertight door”?](what-is-a-watertight-door.md)
-  - [What should we know before discussing what is in the boat?](what-should-we-know-before-discussing-what-is-in-the-boat.md)
-  - [Why are the watertight doors so heavy?](why-are-the-watertight-doors-so-heavy.md)
-  - [Why are there so many doorways to go through?](why-are-there-so-many-doorways-to-go-through.md)
+    - [What do you mean when you say this is what we called a submarine?](./what-do-you-mean-when-you-say-this-is-what-we-called-a-submarine.md)
+    - [Is a submarine a boat or a ship?](./is-a-submarine-a-boat-or-a-ship.md)
+    - [Is the USS Pampanito (SS-383) really a submarine?](./is-the-uss-pampanito-ss-383-really-a-submarine.md)
+    - [Is the submarine a battleship?](./is-the-submarine-a-battleship.md)
