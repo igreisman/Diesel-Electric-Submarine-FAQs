@@ -11,7 +11,7 @@
     USS Puffer
 
     <figure class="mt-4">
-    <img src="/assets/images/USS_Puffer.jpg" alt="USS Puffer" width="480">
+    <img src="../../assets/images/USS_Puffer.jpg" alt="USS Puffer" width="480">
     <figcaption>USS Puffer (SS-268), port view underway off Mare Island, California, on November 10, 1944. US Navy photo courtesy of John Hummel.</figcaption>
     </figure>
 
