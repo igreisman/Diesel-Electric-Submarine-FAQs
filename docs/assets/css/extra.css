@@ -92,3 +92,5 @@
 .is-active-branch > .md-nav__link .md-nav__icon {
   opacity: 1;
 }
+
+figure.mt-4 { margin-top: 2rem; }

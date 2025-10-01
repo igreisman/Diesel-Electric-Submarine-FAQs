@@ -10,6 +10,11 @@
 
     USS Puffer
 
+    <figure class="mt-4">
+    <img src="/assets/images/USS_Puffer.jpg" alt="USS Puffer" width="480">
+    <figcaption>USS Puffer (SS-268), port view underway off Mare Island, California, on November 10, 1944. US Navy photo courtesy of John Hummel.</figcaption>
+    </figure>
+
     The USS Puffer, on her first patrol in late 1943, was held down longer than any other boat during the war.  It began with an attack on a tanker.  The captain hit the tanker with two torpedoes, but it wouldn’t sink.  While the captain maneuvered for another shot, the enemy escort, identified by the captain as a Chidori-type destroyer but more likely actually a sub chaser, attacked and did some minor damage in multiple areas.  However, some gaskets may have been damaged, allowing water to leak into the main induction piping and the boat.  The captain then went to 400 feet and expected to wait out the escort.  But it didn’t happen that way.  The sub-chaser captain was determined and skilled and he had excellent sonar operators.  Each time the Puffer maneuvered, the sub-chaser picked her up.  About every hour the sub-chaser dropped a few more depth charges.
 
     The crew of the Puffer later suspected that they were leaving a trail of bubbles or oil.  That may well have been true since they later found the main induction piping flooded, which added about 12 tons of extra weight to the boat.  Naturally, that made depth control that much harder.
@@ -49,6 +54,12 @@
     “United States Submarine Operations in World War II” by Theodore Roscoe, pages 274 to 278
 
     USS Salmon
+
+    <figure class="mt-4">
+    <img src="/assets/images/USS_Salmon.jpg" alt="USS Salmon" width="480">
+    <figcaption>USS Salmon (SS-182), off the Mare Island Navy Yard, California, 10 August 1944. Official U.S. Navy Photograph, from the collections of the Naval History and Heritage Command.</figcaption>
+    </figure>
+
 
     The Salmon, the lead boat in a class of six, was built by Electric Boat Company.  She was commissioned in March of 1938.  As one of the “fleet boats” built between the wars, she was slightly shorter than the boats built during the war, such as the Pampanito.  Another important difference is that she was a 250-foot boat; she was only tested to a depth of 250 feet.
 
@@ -122,6 +133,11 @@
 
     USS Halibut (SS-232)
 
+    <figure class="mt-4">
+    <img src="/assets/images/USS_Halibut.jpg" alt="USS Halibut" width="480">
+    <figcaption>USS Halibut (SS-232) in February 1942</figcaption>
+    </figure>
+
     Halibut was a Gato class boat completed in 1942.  In November of 1944, she was on her 10th war patrol operating as part of a wolfpack in the area of the Formosa (now Taiwan) Strait.  Halibut had found a small convoy with three escorts.  The captain fired four torpedoes at the largest ship from 3,100 yards.  This was much farther away than usual, but as close as they could get.  Halibut thought they had two hits but could not confirm them.
 
     Shortly after that Skeeter, the mascot (a dog) on board, started to growl and the sonar operator also picked up a strange noise.  It was later believed to be a low-flying airplane with a magnetic anomaly detector.  This aircraft dropped a depth bomb that rocked the Halibut.  It is also likely that the aircraft also dropped a marker of some sort.
@@ -177,6 +193,11 @@
     “Sink ‘Em All” by VADM Charles Lockwood, pages 249 to 250.
 
     Pampanito
+
+    <figure class="mt-4">
+    <img src="/assets/images/USS_Pampanito.jpg" alt="USS Pampanito" width="480">
+    <figcaption>USS Pampanito (SS-383)</figcaption>
+    </figure>
 
     Pampanito started her first war patrol on March 15, 1944, one year to the day after her construction was started.  Pampanito’s assignment was as part of a group of ten submarines providing lifeguard duty for our aircraft.  The planes were attacking Japanese bases at Yap and the Palau islands in the Carolines.  Pampanito’s services as a lifeguard were not required. She was then reassigned to an area south of Guam.
 

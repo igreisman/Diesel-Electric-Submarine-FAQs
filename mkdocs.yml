@@ -46,6 +46,7 @@ nav:
   - US WW2 Subs in General: "categories/us-ww2-subs-in-general/index.md"
 
 markdown_extensions:
+  - md_in_html
   - attr_list
   - admonition
   - pymdownx.details
