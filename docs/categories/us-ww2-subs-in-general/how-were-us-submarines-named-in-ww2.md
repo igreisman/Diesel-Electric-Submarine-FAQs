@@ -1,16 +1,17 @@
 # How were US submarines named in WW2?
 
+
 === "Short Answer"
-    Submarines were named after sea creatures. We can’t just say they were named after fish although most were, such as the Perch, Bullhead, Cod, Flying Fish and Halibut.
+    Submarines were named after sea creatures. We can’t just say they were named after fish although most were, such as the Perch, Bullhead, Cod, Flying Fish and Halibut. However, some were named after marine mammals such as the Whale, Porpoise, Finback (a whale), Sea Cat (an otter) and Sealion.
+
 === "Detailed Answer"
     Submarines were named after sea creatures.  We can’t just say they were named after fish although most were, such as the Perch, Bullhead, Cod, Flying Fish and Halibut.  However, some were named after marine mammals such as the Whale, Porpoise, Finback (a whale), Sea Cat (an otter) and Sealion.  Others were named after unusual sea creatures, such as the Seahorse and Skate.  Obviously, not all could be named after ferocious sea creatures such as sharks or piranhas.  We even named subs the Seadragon and the Trepang, which are nudibranchs or sea slugs.
-    
-    
-    
+
     The Pampanito is named after a smaller version of the pompano fish.  Pampanito, the fish, is about a foot long.  It is a rather mild-mannered fish that is brown or black on top and silver underneath.
+
 === "Related Topics"
-    - [Submarines evolved.  They didn’t need to be conjured up out of someone’s imagination as fully formed vessels in the 1930s and 40s.  These WW2 submarines were the result of a rather lengthy process going back hundreds of years.  Here is a quick summary, up to the beginning of WW2.  A more detailed version of submarine history is included as Appendix 13?](submarines-evolved-they-didnt-need-to-be-conjured-up-out-of-someones-imagination-as-fully.md)
-    - [How were they lost?](how-were-they-lost.md)
-    - [How long did it take to build these submarines?](how-long-did-it-take-to-build-these-submarines.md)
-    - [How big were our submarines in WW2?](how-big-were-our-submarines-in-ww2.md)
-    - [How could they build submarines in Manitowoc on the Lake Michigan?](how-could-they-build-submarines-in-manitowoc-on-the-lake-michigan.md)
+    - [Did “Rosie the Riveter” help build submarines?](./did-rosie-the-riveter-help-build-submarines.md)
+    - [What is a class of ships or submarines?](./what-is-a-class-of-ships-or-submarines.md)
+    - [Did we use any of the reserve fleet submarines after WW2?](./did-we-use-any-of-the-reserve-fleet-submarines-after-ww2.md)
+    - [How many submarines did we lose in WW2?](./how-many-submarines-did-we-lose-in-ww2.md)
+    - [How were they able to design such a complex ship?](./how-were-they-able-to-design-such-a-complex-ship.md)
