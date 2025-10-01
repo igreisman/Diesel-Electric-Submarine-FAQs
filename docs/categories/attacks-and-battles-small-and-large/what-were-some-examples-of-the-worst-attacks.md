@@ -11,7 +11,7 @@
     USS Puffer
 
     <figure class="mt-4">
-    <img src="../../assets/images/USS_Puffer.jpg" alt="USS Puffer" width="480">
+    <img src="../../../assets/images/USS_Puffer.jpg" alt="USS Puffer" width="480">
     <figcaption>USS Puffer (SS-268), port view underway off Mare Island, California, on November 10, 1944. US Navy photo courtesy of John Hummel.</figcaption>
     </figure>
 
@@ -56,7 +56,7 @@
     USS Salmon
 
     <figure class="mt-4">
-    <img src="/assets/images/USS_Salmon.jpg" alt="USS Salmon" width="480">
+    <img src="../../../assets/images/USS_Salmon.jpg" alt="USS Salmon" width="480">
     <figcaption>USS Salmon (SS-182), off the Mare Island Navy Yard, California, 10 August 1944. Official U.S. Navy Photograph, from the collections of the Naval History and Heritage Command.</figcaption>
     </figure>
 
@@ -134,7 +134,7 @@
     USS Halibut (SS-232)
 
     <figure class="mt-4">
-    <img src="/assets/images/USS_Halibut.jpg" alt="USS Halibut" width="480">
+    <img src="../../../assets/images/USS_Halibut.jpg" alt="USS Halibut" width="480">
     <figcaption>USS Halibut (SS-232) in February 1942</figcaption>
     </figure>
 
@@ -195,7 +195,7 @@
     Pampanito
 
     <figure class="mt-4">
-    <img src="/assets/images/USS_Pampanito.jpg" alt="USS Pampanito" width="480">
+    <img src="../../../assets/images/USS_Pampanito.jpg" alt="USS Pampanito" width="480">
     <figcaption>USS Pampanito (SS-383)</figcaption>
     </figure>
 
