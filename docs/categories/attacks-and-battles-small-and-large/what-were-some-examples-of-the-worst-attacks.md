@@ -1,5 +1,8 @@
 # What were some examples of the worst attacks?
 
+!!! help-feedback "Help improve this FAQ"
+    [Click here to share your thoughts](https://docs.google.com/forms/d/12baHBOjNW3Lb1qyCdIZ1xU_pk7ZppQq6CGINDRCoc_s/)
+
 === "Short Answer"
     Here are four examples of the most effective attacks, plus some information about the strongest attack on the Pampanito on her first war patrol. USS Puffer
 
@@ -217,3 +220,4 @@
     - [How did submarines find targets?](./how-did-submarines-find-targets.md)
     - [What did they do if they found a possible target?](./what-did-they-do-if-they-found-a-possible-target.md)
     - [Did anyone ever make a mistake in ship identification?](./did-anyone-ever-make-a-mistake-in-ship-identification.md)
+

@@ -94,3 +94,49 @@
 }
 
 figure.mt-4 { margin-top: 2rem; }
+
+/* General feedback box look */
+.md-typeset .admonition.help-feedback {
+  max-width: 400px;
+  margin: 3em auto;
+  border-left: 0.4rem solid var(--feedback-accent);
+  border-radius: 8px;
+  padding: 0.8em 1em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Title row */
+.md-typeset .admonition.help-feedback > .admonition-title {
+  background-color: var(--feedback-header);
+  color: var(--feedback-text);
+  font-weight: 700;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Links inside feedback box */
+.md-typeset .admonition.help-feedback a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--feedback-link);
+}
+.md-typeset .admonition.help-feedback a:hover {
+  color: var(--feedback-link-hover);
+}
+
+/* Light mode colors */
+[data-md-color-scheme="default"] {
+  --feedback-accent: #2196f3;         /* blue border */
+  --feedback-header: #e3f2fd;         /* very light blue */
+  --feedback-text: #0d47a1;           /* deep blue title text */
+  --feedback-link: #1565c0;           /* medium blue link */
+  --feedback-link-hover: #0d47a1;     /* darker hover */
+}
+
+/* Dark mode colors */
+[data-md-color-scheme="slate"] {
+  --feedback-accent: #90caf9;         /* lighter blue border */
+  --feedback-header: #1e3a5f;         /* dark navy header */
+  --feedback-text: #bbdefb;           /* light text */
+  --feedback-link: #90caf9;           /* light blue link */
+  --feedback-link-hover: #e3f2fd;     /* almost white hover */
+}

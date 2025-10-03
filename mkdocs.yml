@@ -1,10 +1,14 @@
 site_name: Diesel-Electric Submarine FAQs
-site_url: https://sitename.example
+site_url: https://igreisman.github.io/Diesel-Electric-Submarine-FAQs/
+
 
 extra_css:
   - assets/css/extra.css
 extra_javascript:
   - assets/js/active-branch.js
+
+plugins:
+  - search
 
 
 theme:
@@ -12,8 +16,8 @@ theme:
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-  logo: assets/logo.png
-  favicon: assets/favicon/favicon.png
+  logo: assets/images/logo.png
+  favicon: assets/favicon/favicon.ico
   features:
     - navigation.footer
     - content.tabs
@@ -38,8 +42,8 @@ validation:
 
 nav:
   - Home: index.md
-  - US WW2 Subs in General: "categories/us-ww2-subs-in-general/index.md"
   - Hull and Compartments: "categories/hull-and-compartments/index.md"
+  - US WW2 Subs in General: "categories/us-ww2-subs-in-general/index.md"
   - Operating US Subs in WW2: "categories/operating-us-subs-in-ww2/index.md"
   - Life Aboard WW2 US Subs: "categories/life-aboard-ww2-us-subs/index.md"
   - Crews Aboard WW2 US Subs: "categories/crews-aboard-ww2-us-subs/index.md"
