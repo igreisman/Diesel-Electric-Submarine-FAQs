@@ -1,0 +1,4 @@
+mkdocs>=1.6
+mkdocs-material
+mkdocs-minify-plugin
+mkdocs-git-revision-date-localized-plugin

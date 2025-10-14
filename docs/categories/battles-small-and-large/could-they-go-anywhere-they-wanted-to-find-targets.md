@@ -1,5 +1,5 @@
 !!! help-feedback ""
-    [Click here](https://other.example.com/feedback) if you have something to add to this page. We would love to hear from you.
+    [Click here](https://dieselsubs.com/index.php) if you have something to add to this page. We would love to hear from you.
 
 === "Short Answer"
     Definitely not. Boats were assigned to specific areas, both for safety and coverage. If you were outside your assigned area, you might be attacked by friendly forces who weren’t very good at distinguishing our submarines from the Japanese.
