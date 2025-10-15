@@ -1,153 +1,129 @@
-(function () {
-  window._feedbackEnhancerLoaded = true;
-
-  function getQuestion() {
-    const h1 =
-      document.querySelector('article h1') ||
-      document.querySelector('.md-content__inner h1') ||
-      document.querySelector('.md-typeset h1');
-    return h1 ? h1.textContent.trim() : '';
-  }
-
-function getCategory() {
-  // 1) Breadcrumb via data attribute (works on recent Material)
-  const bcModern = document.querySelector('[data-md-component="breadcrumb"]');
-  if (bcModern) {
-    // usually: Home › Category › Page — we want the second-to-last item
-    const items = bcModern.querySelectorAll('li, .md-breadcrumb__item');
-    if (items.length >= 2) {
-      const node =
-        items[items.length - 2].querySelector('a, span, .md-ellipsis') ||
-        items[items.length - 2];
-      const txt = node.textContent.trim();
-      if (txt) return txt;
+<script>
+  (function () {
+    // --- Helper: extract current page's main question title ---
+    function getQuestion() {
+      const h1 =
+        document.querySelector('article h1') ||
+        document.querySelector('.md-content__inner h1') ||
+        document.querySelector('.md-typeset h1');
+      return h1 ? h1.textContent.trim() : '';
     }
-  }
 
-  // 2) Active sidebar section title
-  // Find the active page link in the primary nav
-  const activeLink =
-    document.querySelector('.md-nav--primary .md-nav__link--active') ||
-    document.querySelector('.md-nav--primary .md-nav__item--active > .md-nav__link');
-
-  if (activeLink) {
-    // Walk up to find the nearest ancestor section (md-nav__item) that has a label or link as its heading
-    let sec = activeLink.closest('.md-nav__item');
-    while (sec) {
-      // Prefer a section label (collapsible section header)
-      const label =
-        sec.querySelector(':scope > label .md-nav__link') || // old markup pattern
-        sec.querySelector(':scope > label .md-ellipsis') ||
-        sec.querySelector(':scope > label') ||
-        sec.querySelector(':scope > .md-nav__link');
-
-      if (label) {
-        const txt = label.textContent.trim();
-        if (txt) return txt;
+  // --- Helper: extract category from breadcrumb or sidebar ---
+  function getCategory() {
+    // 1) Breadcrumb (modern Material builds)
+    const bc = document.querySelector('[data-md-component="breadcrumb"]');
+  if (bc) {
+      const items = bc.querySelectorAll('li, .md-breadcrumb__item');
+      if (items.length >= 2) {
+        const node =
+  items[items.length - 2].querySelector('a, span, .md-ellipsis') ||
+  items[items.length - 2];
+  const txt = node && node.textContent ? node.textContent.trim() : '';
+  if (txt) return txt;
       }
-      // Move up to the parent section
-      sec = sec.parentElement ? sec.parentElement.closest('.md-nav__item') : null;
     }
-  }
 
-  // 3) Derive from URL: /categories/<slug>/...
-  const m = location.pathname.match(/\/categories\/([^/]+)/);
-  if (m) {
-    const slug = decodeURIComponent(m[1]);
-    // prettify slug -> Title Case, keep your hyphens/commas where relevant
-    const titleized = slug
-      .replace(/-/g, ' ')
-      .replace(/\b(\w)/g, (s) => s.toUpperCase())
-      .trim();
-    if (titleized) return titleized;
-  }
-
-  // 4) Legacy breadcrumb (your original nth-child approach)
-  const legacy = document.querySelector(
-    '.md-breadcrumb li:nth-child(2) a, .md-breadcrumb li:nth-child(2) span'
-  );
-  if (legacy && legacy.textContent.trim()) return legacy.textContent.trim();
-
+  // 2) Fallback: active link in sidebar section
+  const active = document.querySelector('.md-nav__link--active');
+  if (active) {
+      const section = active.closest('.md-nav__item');
+  if (section) {
+        const label =
+          section.querySelector('> .md-nav__link .md-ellipsis') ||
+          section.querySelector('> .md-nav__link');
+  if (label && label.textContent) return label.textContent.trim();
+      }
+    }
   return '';
-}
+  }
 
-  function enhanceFeedbackLinks() {
+  // --- Build full URL to feedback form ---
+  function buildUrl() {
     const question = getQuestion();
-    if (!question) return;
-
-    const category = getCategory();
-    const links = document.querySelectorAll(
-      '.admonition.help-feedback a[href], .help-feedback a[href]'
-    );
-    if (!links.length) return;
-    links.forEach((a) => {
-      // Skip if already processed
-      if (a.dataset.postEnhanced === '1') return;
-      a.dataset.postEnhanced = '1';
-
-      a.addEventListener('click', (ev) => {
-        const rawHref = a.getAttribute('href');
-alert("rawHref: " + rawHref);
-        if (!rawHref) return;
-
-        let url;
-        try {
-          url = new URL(rawHref, window.location.origin);
-          const TARGET_HOST = 'dieselsubs.com'; // or use location.host to force current site
-          url = new URL(url.pathname + url.search + url.hash, 'https://' + TARGET_HOST);
-          form.action = url.toString();
-alert("form.action: " + form.action);
-        } catch {
-          return; // malformed href — let browser handle
-        }
-
-        // Build a POST form
-        ev.preventDefault();
-
-        const form = document.createElement('form');
-        form.method = 'POST';
-        form.action = url.origin + url.pathname;
-
-        // Respect target (e.g., _blank)
-        const tgt = a.getAttribute('target');
-        if (tgt) form.setAttribute('target', tgt);
-
-        // 1) Add our fields
-        const addField = (name, value) => {
-          const input = document.createElement('input');
-          input.type = 'hidden';
-          input.name = name;
-          input.value = value;
-          form.appendChild(input);
-        };
-        addField('question', question);
-        if (category) addField('category', category);
-
-        // 2) Convert any existing query params on the link to POST fields too
-        const params = new URLSearchParams(url.search);
-        params.forEach((v, k) => {
-          // If question/category already set, don't overwrite
-          if ((k === 'question' && question) || (k === 'category' && category)) return;
-          addField(k, v);
-        });
-
-        // 3) If there’s a hash, pass it along as a field (optional)
-        if (url.hash) addField('_hash', url.hash.substring(1));
-
-        document.body.appendChild(form);
-alert(category);
-alert ("url: " + url.origin + url.pathname + "\nquestion: " + question + "\ncategory: " + category);
-        form.submit();
-      });
-    });
+  const category = getCategory();
+  const url = new URL('https://dieselsubs.com/index.php');
+  if (question) url.searchParams.set('question', question);
+  if (category) url.searchParams.set('category', category);
+  return url.toString();
   }
 
-  if (window.document$ && typeof document$.subscribe === 'function') {
-    document$.subscribe(() => requestAnimationFrame(enhanceFeedbackLinks));
+  // Decide whether a link is "the" feedback link we want to rewrite
+  function isFeedbackLink(a) {
+    if (!a || !a.href) return false;
+
+  const text = (a.textContent || '').toLowerCase().trim();
+  const href = a.getAttribute('href') || '';
+
+  // Visible text check
+  const looksLikeClickHere = text.includes('click here');
+
+  // Placeholder/known targets we want to overwrite
+  const looksLikePlaceholder =
+  href.includes('other.example.com/feedback') ||
+  href.includes('dieselsubs.com/index.php') ||
+  href === '#' || href === '';
+
+  return looksLikeClickHere || looksLikePlaceholder;
+  }
+
+  // --- Update all likely feedback links in the content area ---
+  function updateFeedbackLinks() {
+    const targetUrl = buildUrl();
+
+  // 1) Preferred: the custom help-feedback admonition
+  const candidates = Array.from(
+  document.querySelectorAll('.admonition.help-feedback a')
+  );
+
+  // 2) Fallbacks: any "Click here" anchors in article content
+  if (candidates.length === 0) {
+    candidates.push(
+      ...document.querySelectorAll('article a, .md-content__inner a, .md-typeset a')
+    );
+    }
+
+  let updated = 0;
+  for (const a of candidates) {
+      if (!isFeedbackLink(a)) continue;
+  a.setAttribute('href', targetUrl);
+
+  // Open behavior (choose ONE)
+  a.setAttribute('target', '_self');    // same tab
+  // a.setAttribute('target', '_blank'); // new tab (uncomment if desired)
+  a.setAttribute('rel', 'noopener');
+
+  updated++;
+    }
+
+    // Optional: uncomment to debug counts
+    // console.debug('[feedback-link] updated anchors:', updated, 'url:', targetUrl);
+  }
+
+  // --- Legacy: if you still keep a dummy nav link, rewrite it too ---
+  function updateLegacyNavLink() {
+    const a = document.querySelector('.md-nav__item a[href="#"]');
+  if (!a) return;
+  a.href = buildUrl();
+  a.target = '_self';
+  a.rel = 'noopener';
+  }
+
+  function init() {
+    updateFeedbackLinks();
+  updateLegacyNavLink();
+  }
+
+  // Run on initial load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init, { once: true });
   } else {
-    document.addEventListener('DOMContentLoaded', () =>
-      requestAnimationFrame(enhanceFeedbackLinks)
-    );
+    init();
   }
-  setTimeout(enhanceFeedbackLinks, 300);
+
+  // Re-run on every page navigation (Material SPA)
+  if (window.document$) {
+    window.document$.subscribe(init);
+  }
 })();
+</script>

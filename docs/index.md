@@ -1,4 +1,4 @@
-# wWelcome to the Diesel-Electric Submarine FAQs
+# Welcome to the Diesel-Electric Submarine FAQs
 
 The **Diesel-Electric Submarine FAQs** are designed to help visitors, students, and researchers better understand the history, design, and daily life aboard U.S. World War II–era submarines, with special focus on the **USS Pampanito (SS-383)**.  
 
@@ -13,16 +13,6 @@ These questions and answers come from many years of conversations with veterans,
   - **Related Topics** – links to other FAQs you might find interesting.  
 
 This format is meant to balance accessibility with depth, so both casual visitors and serious researchers can benefit.
-
-## Categories
-  
-- [Battles Small and Large](categories/battles-small-and-large/index.md)
-- [Crews Aboard WW2 US Subs](categories/crews-aboard-ww2-us-subs/index.md)
-- [Hull and Compartments](categories/hull-and-compartments/index.md)
-- [Life Aboard WW2 US Subs](categories/life-aboard-ww2-us-subs/index.md)
-- [Operating US Subs in WW2](categories/operating-us-subs-in-ww2/index.md)
-- [US WW2 Subs in General](categories/us-ww2-subs-in-general/index.md)
-
 
 ## Acknowledgments
 

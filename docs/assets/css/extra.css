@@ -1,16 +1,17 @@
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
 .tooltip {
   position: relative;
-  cursor: help; /* changes cursor on hover */
-  border-bottom: 1px dotted #555; /* optional underline */
+  cursor: help;
+  /* changes cursor on hover */
+  border-bottom: 1px dotted #555;
+  /* optional underline */
 }
 
 .tooltip::after {
   content: attr(data-tooltip);
   position: absolute;
   left: 50%;
-  bottom: 125%; /* show above the word */
+  bottom: 125%;
+  /* show above the word */
   transform: translateX(-50%);
   white-space: nowrap;
   background: #333;
@@ -30,8 +31,10 @@
 
 /* Yellow marker highlight */
 .highlight-popup {
-  background-color: #ffeb3b; /* bright marker yellow */
-  color: #000;              /* black text for contrast */
+  background-color: #ffeb3b;
+  /* bright marker yellow */
+  color: #000;
+  /* black text for contrast */
   font-weight: bold;
   padding: 0 4px;
   border-radius: 12px;
@@ -43,59 +46,63 @@
 }
 
 /* Add space between "Home" and the first category group */
-.md-nav__list > .md-nav__item:nth-child(2) {
-  margin-top: 1.2rem;   /* adjust spacing as needed */
+.md-nav__list>.md-nav__item:nth-child(2) {
+  margin-top: 1.2rem;
+  /* adjust spacing as needed */
 }
 
 /* Highlight the category label when:
    1) the category's own index.md is active, OR
    2) any child FAQ page is active */
-.md-nav__item > .md-nav__link[aria-current="page"],
-.md-nav__item:has(.md-nav__link[aria-current="page"]) > .md-nav__link {
+.md-nav__item>.md-nav__link[aria-current="page"],
+.md-nav__item:has(.md-nav__link[aria-current="page"])>.md-nav__link {
   color: var(--md-accent-fg-color);
   font-weight: 700;
 }
 
 /* Optional: left rail for the whole active category group */
-.md-nav__item > .md-nav__link[aria-current="page"] + nav,
-.md-nav__item:has(.md-nav__link[aria-current="page"]) > nav {
+.md-nav__item>.md-nav__link[aria-current="page"]+nav,
+.md-nav__item:has(.md-nav__link[aria-current="page"])>nav {
   border-left: 0.125rem solid var(--md-accent-fg-color);
   padding-left: 0.5rem;
   margin-left: 0.25rem;
 }
 
 /* Compatibility for themes that still add .md-nav__link--active */
-.md-nav__item > .md-nav__link.md-nav__link--active,
-.md-nav__item:has(.md-nav__link.md-nav__link--active) > .md-nav__link {
+.md-nav__item>.md-nav__link.md-nav__link--active,
+.md-nav__item:has(.md-nav__link.md-nav__link--active)>.md-nav__link {
   color: var(--md-accent-fg-color);
   font-weight: 700;
 }
-.md-nav__item > .md-nav__link.md-nav__link--active + nav,
-.md-nav__item:has(.md-nav__link.md-nav__link--active) > nav {
+
+.md-nav__item>.md-nav__link.md-nav__link--active+nav,
+.md-nav__item:has(.md-nav__link.md-nav__link--active)>nav {
   border-left: 0.125rem solid var(--md-accent-fg-color);
   padding-left: 0.5rem;
   margin-left: 0.25rem;
 }
 
 /* Make the parent category/page label visibly active when a child FAQ (or its own index.md) is open */
-.is-active-branch > .md-nav__link {
+.is-active-branch>.md-nav__link {
   color: var(--md-accent-fg-color);
   font-weight: 700;
 }
 
 /* Optional: subtle left rail to group the open branch */
-.is-active-branch > nav.md-nav {
+.is-active-branch>nav.md-nav {
   border-left: 0.125rem solid var(--md-accent-fg-color);
   padding-left: 0.5rem;
   margin-left: 0.25rem;
 }
 
 /* Optional: if your label uses a chevron/icon, make it look active */
-.is-active-branch > .md-nav__link .md-nav__icon {
+.is-active-branch>.md-nav__link .md-nav__icon {
   opacity: 1;
 }
 
-figure.mt-4 { margin-top: 2rem; }
+figure.mt-4 {
+  margin-top: 2rem;
+}
 
 /* General feedback box look */
 .md-typeset .admonition.help-feedback {
@@ -103,12 +110,12 @@ figure.mt-4 { margin-top: 2rem; }
   margin: 1em auto;
   border-left: 0.4rem solid var(--feedback-accent);
   border-radius: 8px;
-  padding: 0.4em .em;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 0.4em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Title row */
-.md-typeset .admonition.help-feedback > .admonition-title {
+.md-typeset .admonition.help-feedback>.admonition-title {
   background-color: var(--feedback-header);
   color: var(--feedback-text);
   font-weight: 700;
@@ -121,32 +128,44 @@ figure.mt-4 { margin-top: 2rem; }
   text-decoration: underline;
   color: var(--feedback-link);
 }
+
 .md-typeset .admonition.help-feedback a:hover {
   color: var(--feedback-link-hover);
 }
+
 /* Align help-feedback admonition with the left margin */
 .md-typeset .admonition.help-feedback,
 .md-typeset details.help-feedback {
   margin-left: 0 !important;
-  padding-left: 0.75rem
+  padding-left: 0.75rem;
 }
 
 /* Light mode colors */
 [data-md-color-scheme="default"] {
-  --feedback-accent: #2196f3;         /* blue border */
-  --feedback-header: #e3f2fd;         /* very light blue */
-  --feedback-text: #0d47a1;           /* deep blue title text */
-  --feedback-link: #1565c0;           /* medium blue link */
-  --feedback-link-hover: #0d47a1;     /* darker hover */
+  --feedback-accent: #2196f3;
+  /* blue border */
+  --feedback-header: #e3f2fd;
+  /* very light blue */
+  --feedback-text: #0d47a1;
+  /* deep blue title text */
+  --feedback-link: #1565c0;
+  /* medium blue link */
+  --feedback-link-hover: #0d47a1;
+  /* darker hover */
 }
 
 /* Dark mode colors */
 [data-md-color-scheme="slate"] {
-  --feedback-accent: #90caf9;         /* lighter blue border */
-  --feedback-header: #1e3a5f;         /* dark navy header */
-  --feedback-text: #bbdefb;           /* light text */
-  --feedback-link: #90caf9;           /* light blue link */
-  --feedback-link-hover: #e3f2fd;     /* almost white hover */
+  --feedback-accent: #90caf9;
+  /* lighter blue border */
+  --feedback-header: #1e3a5f;
+  /* dark navy header */
+  --feedback-text: #bbdefb;
+  /* light text */
+  --feedback-link: #90caf9;
+  /* light blue link */
+  --feedback-link-hover: #e3f2fd;
+  /* almost white hover */
 }
 
 /* Target the "Help improve this FAQ" nav entry */
@@ -154,24 +173,31 @@ figure.mt-4 { margin-top: 2rem; }
   display: block;
   padding: 0.6em 0.8em;
   margin: 0.5em 0;
-  border-left: 0.3em solid #fdfdfd;  /* blue bar like admonition */
-  background: #363638;              /* light background */
+  border-left: 0.3em solid #fdfdfd;
+  /* blue bar like admonition */
+  background: #363638;
+  /* light background */
   font-weight: 600;
   border-radius: 0 4px 4px 0;
 }
+
 /* Add space before the Help improve block */
-.md-nav__list > .md-nav__item:nth-last-child(2) {
-  margin-bottom: 1.5rem;  /* tweak value */
+.md-nav__list>.md-nav__item:nth-last-child(2) {
+  margin-bottom: 1.5rem;
+  /* tweak value */
 }
 
 /* Add icon before the text (same as admonition tip) */
 .md-nav__item a[href="#"]::before {
-  content: "handshake";              /* the ligature text */
-  font-family: "Material Symbols Outlined";  /* or 'Material Symbols Rounded' / 'Material Icons' depending on your load */
+  content: "handshake";
+  /* the ligature text */
+  font-family: "Material Symbols Outlined";
+  /* or 'Material Symbols Rounded' / 'Material Icons' depending on your load */
   font-weight: normal;
   font-style: normal;
   display: inline-block;
-  font-size: 1.1em;                  /* tweak size to match your nav */
+  font-size: 1.1em;
+  /* tweak size to match your nav */
   margin-right: 0.4em;
   vertical-align: middle;
 }
@@ -179,24 +205,27 @@ figure.mt-4 { margin-top: 2rem; }
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3 {
-  margin-bottom: 0.5rem;  /* default is usually 1rem or more */
+  margin-bottom: 0.5rem;
+  /* default is usually 1rem or more */
 }
 
 /* --- 1) Left-align pymdownx.tabbed headings (Material for MkDocs) --- */
 /* Works whether or not alternate_style is on, and beats theme defaults. */
 
 /* Don't let labels stretch to fill the row */
-.md-typeset .tabbed-set > label {
+.md-typeset .tabbed-set>label {
   flex: 0 0 auto !important;
 }
 
 /* Ensure the label content is left-aligned and spaced */
-.md-typeset .tabbed-set > label {
-  display: inline-flex;              /* consistent box model */
+.md-typeset .tabbed-set>label {
+  display: inline-flex;
+  /* consistent box model */
   align-items: center;
   justify-content: flex-start !important;
   text-align: left !important;
-  margin-right: .5rem;               /* adjust spacing between tabs */
+  margin-right: .5rem;
+  /* adjust spacing between tabs */
 }
 
 /* Make the whole bar start at the left edge */
@@ -211,18 +240,19 @@ figure.mt-4 { margin-top: 2rem; }
 }
 
 /* Keep the content full-width beneath the labels */
-.md-typeset .tabbed-set > .tabbed-content {
+.md-typeset .tabbed-set>.tabbed-content {
   width: 100%;
 }
 
 /* --- 2) Tweak your help-feedback admonition spacing/indent --- */
 .md-typeset .admonition.help-feedback,
 .md-typeset details.help-feedback {
-  margin-bottom: .5rem;              /* tighter gap before the tabs */
+  margin-bottom: .5rem;
+  /* tighter gap before the tabs */
 }
 
 /* Add a small indent to the first paragraph/link inside the admonition */
-.md-typeset .admonition.help-feedback > :not(.admonition-title):first-child {
+.md-typeset .admonition.help-feedback> :not(.admonition-title):first-child {
   padding-left: .4rem;
 }
 
@@ -231,4 +261,14 @@ figure.mt-4 { margin-top: 2rem; }
   text-underline-offset: 2px;
 }
 
-#comments { width: 90%; }
+#comments {
+  width: 90%;
+}
+
+.md-nav__item {
+  margin-bottom: 0;
+}
+
+.md-nav__link {
+  margin-bottom: 0;
+}
